@@ -1,9 +1,8 @@
-import altair as alt
-import numpy as np
-import pandas as pd
 import streamlit as st
-#import matplotlib.pyplot as plt
+import os
 
-git = pd.read_csv('github_dataset.csv')
+# Get the current working directory
+current_directory = os.getcwd()
 
-st.write("Hello World")
+# Display the current working directory in the Streamlit app
+st.write(f"Current Working Directory: {current_directory}")
